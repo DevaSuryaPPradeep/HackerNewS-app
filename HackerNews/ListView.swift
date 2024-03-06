@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ListView.swift
 //  HackerNews
 //
 //  Created by Devasurya on 05/03/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ListView: View {
     /// Variable declarations
     @ObservedObject  var APIManager = NetworkManger()
     @State var screenTransitionVariable: Bool = false
@@ -41,5 +41,5 @@ struct ContentView: View {
 
 
 #Preview {
-    ContentView()
+    ListView()
 }
