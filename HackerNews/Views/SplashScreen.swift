@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SplashScreen: View {
+    
     /// Variable Decalarations
     @State private var isActive: Bool = false
     @State private var showView: Bool = false

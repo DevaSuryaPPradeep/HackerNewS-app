@@ -16,7 +16,6 @@ struct DetailView: View {
         WebView(urlValue: url)
     }
 }
-
 #Preview {
     DetailView(url: "htttps://www.google.com")
 }
