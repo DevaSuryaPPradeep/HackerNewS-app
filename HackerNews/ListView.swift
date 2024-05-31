@@ -12,10 +12,11 @@ struct ListView: View {
     /// Variable declarations
     @ObservedObject  var APIManager = NetworkManger()
     @State var screenTransitionVariable: Bool = false
+    
     var body: some View {
         NavigationStack{
             VStack {
-                List(APIManager.postdata) {post in
+                List(APIManager.postdata) { post in
                     NavigationLink(value: post.url) {
                         HStack{
                             Text("\(post.points)")
@@ -44,3 +45,4 @@ struct ListView: View {
 #Preview {
     ListView()
 }
+
